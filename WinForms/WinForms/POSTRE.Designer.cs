@@ -72,12 +72,11 @@
             // 
             // dataGridView1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
+            this.dataGridView1.Location = new System.Drawing.Point(167, 218);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(489, 150);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // btnsalir
             // 
@@ -91,28 +90,39 @@
             // 
             // btnmodificar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Precio";
+            this.btnmodificar.Location = new System.Drawing.Point(521, 37);
+            this.btnmodificar.Name = "btnmodificar";
+            this.btnmodificar.Size = new System.Drawing.Size(75, 35);
+            this.btnmodificar.TabIndex = 13;
+            this.btnmodificar.Text = "Modificar";
+            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click_1);
             // 
             // btnbajas
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Nombre";
+            this.btnbajas.Location = new System.Drawing.Point(359, 113);
+            this.btnbajas.Name = "btnbajas";
+            this.btnbajas.Size = new System.Drawing.Size(75, 35);
+            this.btnbajas.TabIndex = 14;
+            this.btnbajas.Text = "Bajas";
+            this.btnbajas.Click += new System.EventHandler(this.btnbajas_Click);
             // 
             // btnregresar
             // 
-            this.txtid.Location = new System.Drawing.Point(109, 42);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(178, 20);
-            this.txtid.TabIndex = 4;
+            this.btnregresar.Location = new System.Drawing.Point(521, 113);
+            this.btnregresar.Name = "btnregresar";
+            this.btnregresar.Size = new System.Drawing.Size(75, 35);
+            this.btnregresar.TabIndex = 15;
+            this.btnregresar.Text = "Regresar";
+            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
+            // 
+            // bu
+            // 
+            this.bu.Location = new System.Drawing.Point(359, 37);
+            this.bu.Name = "bu";
+            this.bu.Size = new System.Drawing.Size(75, 35);
+            this.bu.TabIndex = 16;
+            this.bu.Text = "Altas";
+            this.bu.Click += new System.EventHandler(this.bu_Click_1);
             // 
             // txtnombre
             // 

@@ -20,37 +20,28 @@ namespace WinForms
 
         private void POSTRE_Load(object sender, EventArgs e)
         {
-            P.conectar();
-            mostrarDatos();
-
+           
 
         }
 
         private void bu_Click(object sender, EventArgs e)
         {
-            string agregar = "insert into POSTRE values(" + txtid.Text + ",'" + txtnombre.Text + "'," + txtprecio.Text + ",'" + txtexistencia.Text + "')";
-            if (P.agregar(agregar))
-            {
-                MessageBox.Show("Datos agregados");
-                mostrarDatos();
+            
         }
-            else
-            {
-                MessageBox.Show("Error al agregar");
-            }
-        }
-        public void mostrarDatos()
-        {
-            P.consulta("select*from POSTRE", "POSTRE");
-            dataGridView1.DataSource = P.ds.Tables["POSTRE"];
-        }
-
+        
         private void btnsalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void btnmodificar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+
+            
+        private void btnmodificar_Click_1(object sender, EventArgs e)
         {
             string actualizar = "ID=" + txtid.Text + ",NOMBRE='" + txtnombre.Text + "',PRECIO=" + txtprecio.Text + ",EXISTENCIA='" + txtexistencia + "'";
             if (P.modificar("POSTRE", actualizar, "ID=" + txtid.Text))
@@ -64,7 +55,23 @@ namespace WinForms
             }
         }
 
+        private void bu_Click_1(object sender, EventArgs e)
+        {
+            string agregar = "insert into POSTRE values(" + txtid.Text + ",'" + txtnombre.Text + "'," + txtprecio.Text + ",'" + txtexistencia.Text + "')";
+            if (P.agregar(agregar))
+            {
+                MessageBox.Show("Datos agregados");
 
+            }
+            else
+            {
+                MessageBox.Show("Error al agregar");
+            }
+
+        }
+
+        private void btnbajas_Click(object sender, EventArgs e)
+        {
             if (P.eliminar("POSTRE", "ID=" + txtid.Text))
             {
                 MessageBox.Show("Se elimino");
@@ -74,6 +81,7 @@ namespace WinForms
                 txtexistencia.Text = "";
 
                 mostrarDatos();
+
             }
             else
             {
@@ -82,6 +90,23 @@ namespace WinForms
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+
+        }
+
+        private void btnregresar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void mostrarDatos()
+        {
+           P.consulta("select*from POSTRE", "POSTRE");
+            dataGridView1.DataSource = P.ds.Tables["POSTRE"];
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow grid = dataGridView1.Rows[e.RowIndex];
 
