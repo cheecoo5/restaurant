@@ -72,11 +72,12 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(120, 215);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(523, 192);
-            this.dataGridView1.TabIndex = 13;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID";
             // 
             // btnsalir
             // 
@@ -90,41 +91,28 @@
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(535, 51);
-            this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(75, 40);
-            this.btnmodificar.TabIndex = 11;
-            this.btnmodificar.Text = "Modificar";
-            this.btnmodificar.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Precio";
             // 
             // btnbajas
             // 
-            this.btnbajas.Location = new System.Drawing.Point(397, 121);
-            this.btnbajas.Name = "btnbajas";
-            this.btnbajas.Size = new System.Drawing.Size(75, 40);
-            this.btnbajas.TabIndex = 10;
-            this.btnbajas.Text = "Bajas";
-            this.btnbajas.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(29, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Nombre";
             // 
             // btnregresar
             // 
-            this.btnregresar.Location = new System.Drawing.Point(535, 128);
-            this.btnregresar.Name = "btnregresar";
-            this.btnregresar.Size = new System.Drawing.Size(75, 40);
-            this.btnregresar.TabIndex = 9;
-            this.btnregresar.Text = "Regresar";
-            this.btnregresar.UseVisualStyleBackColor = true;
-            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
-            // 
-            // bu
-            // 
-            this.bu.Location = new System.Drawing.Point(397, 51);
-            this.bu.Name = "bu";
-            this.bu.Size = new System.Drawing.Size(75, 40);
-            this.bu.TabIndex = 8;
-            this.bu.Text = "Altas";
-            this.bu.UseVisualStyleBackColor = true;
-            this.bu.Click += new System.EventHandler(this.bu_Click);
+            this.txtid.Location = new System.Drawing.Point(109, 42);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(178, 20);
+            this.txtid.TabIndex = 4;
             // 
             // txtnombre
             // 
