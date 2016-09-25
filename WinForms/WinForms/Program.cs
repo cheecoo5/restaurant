@@ -16,7 +16,7 @@ namespace WinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCOMIDA());
+            Application.Run(new Bebidas());
         }
     }
 }

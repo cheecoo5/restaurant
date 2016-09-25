@@ -44,32 +44,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="comida.cs" />
-    <Compile Include="frmCOMIDA.cs">
+    <Compile Include="Bebidas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCOMIDA.Designer.cs">
-      <DependentUpon>frmCOMIDA.cs</DependentUpon>
+    <Compile Include="Bebidas.Designer.cs">
+      <DependentUpon>Bebidas.cs</DependentUpon>
     </Compile>
+    <Compile Include="bebidas1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMENU.cs">
+    <Compile Include="POSTRE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMENU.Designer.cs">
-      <DependentUpon>frmMENU.cs</DependentUpon>
+    <Compile Include="POSTRE.Designer.cs">
+      <DependentUpon>POSTRE.cs</DependentUpon>
     </Compile>
+    <Compile Include="postres.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCOMIDA.resx">
-      <DependentUpon>frmCOMIDA.cs</DependentUpon>
+    <EmbeddedResource Include="Bebidas.resx">
+      <DependentUpon>Bebidas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMENU.resx">
-      <DependentUpon>frmMENU.cs</DependentUpon>
+    <EmbeddedResource Include="POSTRE.resx">
+      <DependentUpon>POSTRE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
