@@ -51,7 +51,7 @@ namespace WinForms
 
         private void btnmodificar_Click(object sender, EventArgs e)
         {
-            string actualizar = "ID=" + txtid.Text + ",NOMBRE='" + txtnombre.Text + "',PRECIO=" + txtprecio.Text + ",EXCISTENCIA='" + txtexistencia.Text + "'";
+            string actualizar = "ID=" + txtid.Text + ",NOMBRE='" + txtnombre.Text + "',PRECIO=" + txtprecio.Text + ",EXISTENCIA='" + txtexistencia.Text + "'";
             if (B.modificar("BEBIDAS", actualizar, "ID=" + txtid.Text))
             {
                 MessageBox.Show("Datos Actualizados");
@@ -89,6 +89,19 @@ namespace WinForms
             txtnombre.Text = grid.Cells[1].Value.ToString();
             txtprecio.Text = grid.Cells[2].Value.ToString();
             txtexistencia.Text = grid.Cells[3].Value.ToString();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnregresar_Click(object sender, EventArgs e)
+        {
+            menu a = new menu();
+            a.Show();
+
+            this.Close();
         }
     }
 }

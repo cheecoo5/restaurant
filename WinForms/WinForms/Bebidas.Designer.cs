@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblid = new System.Windows.Forms.Label();
-            this.lblexistencia = new System.Windows.Forms.Label();
-            this.lblprecio = new System.Windows.Forms.Label();
-            this.lblnombre = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.txtexistencia = new System.Windows.Forms.TextBox();
-            this.txtprecio = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.btnaltas = new System.Windows.Forms.Button();
-            this.btnbajas = new System.Windows.Forms.Button();
-            this.btnmodificar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnregresar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.btnregresar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnmodificar = new System.Windows.Forms.Button();
+            this.btnbajas = new System.Windows.Forms.Button();
+            this.btnaltas = new System.Windows.Forms.Button();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.txtexistencia = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.lblnombre = new System.Windows.Forms.Label();
+            this.lblprecio = new System.Windows.Forms.Label();
+            this.lblexistencia = new System.Windows.Forms.Label();
+            this.lblid = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,89 +70,34 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu Bebidas";
             // 
-            // lblid
+            // btnsalir
             // 
-            this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(16, 45);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(18, 13);
-            this.lblid.TabIndex = 0;
-            this.lblid.Text = "ID";
+            this.btnsalir.Location = new System.Drawing.Point(403, 126);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(82, 41);
+            this.btnsalir.TabIndex = 14;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // lblexistencia
+            // btnregresar
             // 
-            this.lblexistencia.AutoSize = true;
-            this.lblexistencia.Location = new System.Drawing.Point(16, 167);
-            this.lblexistencia.Name = "lblexistencia";
-            this.lblexistencia.Size = new System.Drawing.Size(55, 13);
-            this.lblexistencia.TabIndex = 1;
-            this.lblexistencia.Text = "Existencia";
+            this.btnregresar.Location = new System.Drawing.Point(520, 74);
+            this.btnregresar.Name = "btnregresar";
+            this.btnregresar.Size = new System.Drawing.Size(75, 41);
+            this.btnregresar.TabIndex = 13;
+            this.btnregresar.Text = "Regresar";
+            this.btnregresar.UseVisualStyleBackColor = true;
+            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
             // 
-            // lblprecio
+            // dataGridView1
             // 
-            this.lblprecio.AutoSize = true;
-            this.lblprecio.Location = new System.Drawing.Point(16, 126);
-            this.lblprecio.Name = "lblprecio";
-            this.lblprecio.Size = new System.Drawing.Size(37, 13);
-            this.lblprecio.TabIndex = 2;
-            this.lblprecio.Text = "Precio";
-            // 
-            // lblnombre
-            // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Location = new System.Drawing.Point(16, 85);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(44, 13);
-            this.lblnombre.TabIndex = 3;
-            this.lblnombre.Text = "Nombre";
-            // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(98, 45);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(156, 20);
-            this.txtid.TabIndex = 4;
-            // 
-            // txtexistencia
-            // 
-            this.txtexistencia.Location = new System.Drawing.Point(98, 167);
-            this.txtexistencia.Name = "txtexistencia";
-            this.txtexistencia.Size = new System.Drawing.Size(156, 20);
-            this.txtexistencia.TabIndex = 5;
-            // 
-            // txtprecio
-            // 
-            this.txtprecio.Location = new System.Drawing.Point(98, 126);
-            this.txtprecio.Name = "txtprecio";
-            this.txtprecio.Size = new System.Drawing.Size(156, 20);
-            this.txtprecio.TabIndex = 6;
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.Location = new System.Drawing.Point(98, 85);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(156, 20);
-            this.txtnombre.TabIndex = 7;
-            // 
-            // btnaltas
-            // 
-            this.btnaltas.Location = new System.Drawing.Point(300, 45);
-            this.btnaltas.Name = "btnaltas";
-            this.btnaltas.Size = new System.Drawing.Size(79, 41);
-            this.btnaltas.TabIndex = 8;
-            this.btnaltas.Text = "Altas";
-            this.btnaltas.UseVisualStyleBackColor = true;
-            this.btnaltas.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnbajas
-            // 
-            this.btnbajas.Location = new System.Drawing.Point(300, 126);
-            this.btnbajas.Name = "btnbajas";
-            this.btnbajas.Size = new System.Drawing.Size(79, 41);
-            this.btnbajas.TabIndex = 10;
-            this.btnbajas.Text = "Bajas";
-            this.btnbajas.UseVisualStyleBackColor = true;
-            this.btnbajas.Click += new System.EventHandler(this.btnbajas_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(78, 219);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(445, 191);
+            this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnmodificar
             // 
@@ -164,39 +109,96 @@
             this.btnmodificar.UseVisualStyleBackColor = true;
             this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
-            // dataGridView1
+            // btnbajas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(78, 219);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(445, 191);
-            this.dataGridView1.TabIndex = 12;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.btnbajas.Location = new System.Drawing.Point(300, 126);
+            this.btnbajas.Name = "btnbajas";
+            this.btnbajas.Size = new System.Drawing.Size(79, 41);
+            this.btnbajas.TabIndex = 10;
+            this.btnbajas.Text = "Bajas";
+            this.btnbajas.UseVisualStyleBackColor = true;
+            this.btnbajas.Click += new System.EventHandler(this.btnbajas_Click);
             // 
-            // btnregresar
+            // btnaltas
             // 
-            this.btnregresar.Location = new System.Drawing.Point(520, 74);
-            this.btnregresar.Name = "btnregresar";
-            this.btnregresar.Size = new System.Drawing.Size(75, 41);
-            this.btnregresar.TabIndex = 13;
-            this.btnregresar.Text = "Regresar";
-            this.btnregresar.UseVisualStyleBackColor = true;
+            this.btnaltas.Location = new System.Drawing.Point(300, 45);
+            this.btnaltas.Name = "btnaltas";
+            this.btnaltas.Size = new System.Drawing.Size(79, 41);
+            this.btnaltas.TabIndex = 8;
+            this.btnaltas.Text = "Altas";
+            this.btnaltas.UseVisualStyleBackColor = true;
+            this.btnaltas.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnsalir
+            // txtnombre
             // 
-            this.btnsalir.Location = new System.Drawing.Point(403, 126);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(82, 41);
-            this.btnsalir.TabIndex = 14;
-            this.btnsalir.Text = "Salir";
-            this.btnsalir.UseVisualStyleBackColor = true;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            this.txtnombre.Location = new System.Drawing.Point(98, 85);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(156, 20);
+            this.txtnombre.TabIndex = 7;
+            // 
+            // txtprecio
+            // 
+            this.txtprecio.Location = new System.Drawing.Point(98, 126);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(156, 20);
+            this.txtprecio.TabIndex = 6;
+            // 
+            // txtexistencia
+            // 
+            this.txtexistencia.Location = new System.Drawing.Point(98, 167);
+            this.txtexistencia.Name = "txtexistencia";
+            this.txtexistencia.Size = new System.Drawing.Size(156, 20);
+            this.txtexistencia.TabIndex = 5;
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(98, 45);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(156, 20);
+            this.txtid.TabIndex = 4;
+            // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Location = new System.Drawing.Point(16, 85);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(44, 13);
+            this.lblnombre.TabIndex = 3;
+            this.lblnombre.Text = "Nombre";
+            // 
+            // lblprecio
+            // 
+            this.lblprecio.AutoSize = true;
+            this.lblprecio.Location = new System.Drawing.Point(16, 126);
+            this.lblprecio.Name = "lblprecio";
+            this.lblprecio.Size = new System.Drawing.Size(37, 13);
+            this.lblprecio.TabIndex = 2;
+            this.lblprecio.Text = "Precio";
+            // 
+            // lblexistencia
+            // 
+            this.lblexistencia.AutoSize = true;
+            this.lblexistencia.Location = new System.Drawing.Point(16, 167);
+            this.lblexistencia.Name = "lblexistencia";
+            this.lblexistencia.Size = new System.Drawing.Size(55, 13);
+            this.lblexistencia.TabIndex = 1;
+            this.lblexistencia.Text = "Existencia";
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(16, 45);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(18, 13);
+            this.lblid.TabIndex = 0;
+            this.lblid.Text = "ID";
             // 
             // Bebidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 460);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Name = "Bebidas";
             this.Text = "Bebidas";

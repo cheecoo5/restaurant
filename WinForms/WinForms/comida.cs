@@ -7,6 +7,8 @@ using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+
+
 namespace WinForms
 {
     class comida
@@ -17,12 +19,13 @@ namespace WinForms
         public DataSet ds = new DataSet();
         public SqlDataAdapter da = new SqlDataAdapter();
         public SqlCommand comando;
+
         public void conectar()
         {
             try
             {
                 cn.Open();
-                MessageBox.Show("conectado");
+                MessageBox.Show("Conectado");
             }
             catch
             {
@@ -89,7 +92,7 @@ namespace WinForms
             {
                 return false;
             }
+
         }
     }
-
 }

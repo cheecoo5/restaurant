@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace WinForms
 {
-    public partial class frmCOMIDA : Form
+    public partial class FrmCOMIDA : Form
     {
         comida C = new comida();
-        public frmCOMIDA()
+        public FrmCOMIDA()
         {
             InitializeComponent();
         }
 
-        private void COMIDA_Load(object sender, EventArgs e)
+        private void FrmCOMIDA_Load(object sender, EventArgs e)
         {
             C.conectar();
             mostrarDatos();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow grid = dataGrid.Rows[e.RowIndex];
-            textID.Text = grid.Cells[0].Value.ToString();
-            textNombre.Text = grid.Cells[1].Value.ToString();
-            textPrecio.Text = grid.Cells[2].Value.ToString();
-            textExistencia.Text = grid.Cells[3].Value.ToString();
-
         }
         public void mostrarDatos()
         {
@@ -39,29 +29,10 @@ namespace WinForms
             dataGrid.DataSource = C.ds.Tables["COMIDA"];
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            string agregar = "insert into COMIDA values(" + textID.Text + ",'" + textNombre.Text + "'," + textPrecio.Text + ",'" + textExistencia + "')";
-            if (C.agregar(agregar))
-            {
-                MessageBox.Show("Datos agregados");
-                mostrarDatos();
-
-            }
-            else
-            {
-                MessageBox.Show("Error al agregar");
-
-            }
-
-
-
-        }
-
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            string actualizar = "ID=" + textID.Text + ",NOMBRE='" + textNombre.Text + ",PRECIO=" + textPrecio.Text + "',EXISTENCIA=" + textExistencia.Text + "";
-            if (C.modificar("COMIDA", actualizar, "ID=" + textID.Text))
+            string actualizar = "ID=" + txtID.Text + ",NOMBRE='" + txtNombre.Text + "',PRECIO=" + txtPrecio.Text + ",EXISTENCIA='" + txtExistencia.Text + "'";
+            if (C.modificar("COMIDA", actualizar, "ID=" + txtID.Text))
             {
                 MessageBox.Show("Datos Actualizados");
                 mostrarDatos();
@@ -74,21 +45,57 @@ namespace WinForms
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
-            if (C.eliminar("COMIDA", "ID=" + textID.Text))
+            if (C.eliminar("COMIDA", "ID=" + txtID.Text))
             {
                 MessageBox.Show("Se elimino");
-                textID.Text = "";
-                textNombre.Text = "";
-                textPrecio.Text = "";
-                textExistencia.Text = "";
-                
+                txtID.Text = "";
+                txtNombre.Text = "";
+                txtPrecio.Text = "";
+                txtExistencia.Text = "";
+
                 mostrarDatos();
             }
             else
             {
                 MessageBox.Show("No se pudo eliminar");
             }
+        }
+
+        private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow grid = dataGrid.Rows[e.RowIndex];
+
+            txtID.Text = grid.Cells[0].Value.ToString();
+            txtNombre.Text = grid.Cells[1].Value.ToString();
+            txtPrecio.Text = grid.Cells[2].Value.ToString();
+            txtExistencia.Text = grid.Cells[3].Value.ToString();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string agregar = "insert into COMIDA values(" + txtID.Text + ",'" + txtNombre.Text + "'," + txtPrecio.Text + ",'" + txtExistencia.Text + "')";
+            if (C.agregar(agregar))
+            {
+                MessageBox.Show("Datos agregados");
+                mostrarDatos();
+            }
+            else
+            {
+                MessageBox.Show("Error al agregar");
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            menu a = new menu();
+            a.Show();
+
+            this.Close();
         }
     }
 }

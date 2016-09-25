@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.txtexistencia = new System.Windows.Forms.TextBox();
-            this.txtprecio = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.bu = new System.Windows.Forms.Button();
-            this.btnregresar = new System.Windows.Forms.Button();
-            this.btnbajas = new System.Windows.Forms.Button();
-            this.btnmodificar = new System.Windows.Forms.Button();
-            this.btnsalir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnsalir = new System.Windows.Forms.Button();
+            this.btnmodificar = new System.Windows.Forms.Button();
+            this.btnbajas = new System.Windows.Forms.Button();
+            this.btnregresar = new System.Windows.Forms.Button();
+            this.bu = new System.Windows.Forms.Button();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtprecio = new System.Windows.Forms.TextBox();
+            this.txtexistencia = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,69 +70,51 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu de Postres";
             // 
-            // label1
+            // dataGridView1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(120, 215);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(523, 192);
+            this.dataGridView1.TabIndex = 13;
             // 
-            // label2
+            // btnsalir
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Existencia";
+            this.btnsalir.Location = new System.Drawing.Point(658, 86);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(75, 40);
+            this.btnsalir.TabIndex = 12;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // label3
+            // btnmodificar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Precio";
+            this.btnmodificar.Location = new System.Drawing.Point(535, 51);
+            this.btnmodificar.Name = "btnmodificar";
+            this.btnmodificar.Size = new System.Drawing.Size(75, 40);
+            this.btnmodificar.TabIndex = 11;
+            this.btnmodificar.Text = "Modificar";
+            this.btnmodificar.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // btnbajas
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Nombre";
+            this.btnbajas.Location = new System.Drawing.Point(397, 121);
+            this.btnbajas.Name = "btnbajas";
+            this.btnbajas.Size = new System.Drawing.Size(75, 40);
+            this.btnbajas.TabIndex = 10;
+            this.btnbajas.Text = "Bajas";
+            this.btnbajas.UseVisualStyleBackColor = true;
             // 
-            // txtid
+            // btnregresar
             // 
-            this.txtid.Location = new System.Drawing.Point(109, 42);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(178, 20);
-            this.txtid.TabIndex = 4;
-            // 
-            // txtexistencia
-            // 
-            this.txtexistencia.Location = new System.Drawing.Point(109, 148);
-            this.txtexistencia.Name = "txtexistencia";
-            this.txtexistencia.Size = new System.Drawing.Size(178, 20);
-            this.txtexistencia.TabIndex = 5;
-            // 
-            // txtprecio
-            // 
-            this.txtprecio.Location = new System.Drawing.Point(109, 113);
-            this.txtprecio.Name = "txtprecio";
-            this.txtprecio.Size = new System.Drawing.Size(178, 20);
-            this.txtprecio.TabIndex = 6;
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.Location = new System.Drawing.Point(109, 78);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(178, 20);
-            this.txtnombre.TabIndex = 7;
+            this.btnregresar.Location = new System.Drawing.Point(535, 128);
+            this.btnregresar.Name = "btnregresar";
+            this.btnregresar.Size = new System.Drawing.Size(75, 40);
+            this.btnregresar.TabIndex = 9;
+            this.btnregresar.Text = "Regresar";
+            this.btnregresar.UseVisualStyleBackColor = true;
+            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
             // 
             // bu
             // 
@@ -144,49 +126,69 @@
             this.bu.UseVisualStyleBackColor = true;
             this.bu.Click += new System.EventHandler(this.bu_Click);
             // 
-            // btnregresar
+            // txtnombre
             // 
-            this.btnregresar.Location = new System.Drawing.Point(535, 128);
-            this.btnregresar.Name = "btnregresar";
-            this.btnregresar.Size = new System.Drawing.Size(75, 40);
-            this.btnregresar.TabIndex = 9;
-            this.btnregresar.Text = "Regresar";
-            this.btnregresar.UseVisualStyleBackColor = true;
+            this.txtnombre.Location = new System.Drawing.Point(109, 78);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(178, 20);
+            this.txtnombre.TabIndex = 7;
             // 
-            // btnbajas
+            // txtprecio
             // 
-            this.btnbajas.Location = new System.Drawing.Point(397, 121);
-            this.btnbajas.Name = "btnbajas";
-            this.btnbajas.Size = new System.Drawing.Size(75, 40);
-            this.btnbajas.TabIndex = 10;
-            this.btnbajas.Text = "Bajas";
-            this.btnbajas.UseVisualStyleBackColor = true;
+            this.txtprecio.Location = new System.Drawing.Point(109, 113);
+            this.txtprecio.Name = "txtprecio";
+            this.txtprecio.Size = new System.Drawing.Size(178, 20);
+            this.txtprecio.TabIndex = 6;
             // 
-            // btnmodificar
+            // txtexistencia
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(535, 51);
-            this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(75, 40);
-            this.btnmodificar.TabIndex = 11;
-            this.btnmodificar.Text = "Modificar";
-            this.btnmodificar.UseVisualStyleBackColor = true;
+            this.txtexistencia.Location = new System.Drawing.Point(109, 148);
+            this.txtexistencia.Name = "txtexistencia";
+            this.txtexistencia.Size = new System.Drawing.Size(178, 20);
+            this.txtexistencia.TabIndex = 5;
             // 
-            // btnsalir
+            // txtid
             // 
-            this.btnsalir.Location = new System.Drawing.Point(658, 86);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(75, 40);
-            this.btnsalir.TabIndex = 12;
-            this.btnsalir.Text = "Salir";
-            this.btnsalir.UseVisualStyleBackColor = true;
+            this.txtid.Location = new System.Drawing.Point(109, 42);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(178, 20);
+            this.txtid.TabIndex = 4;
             // 
-            // dataGridView1
+            // label4
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(120, 215);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(523, 192);
-            this.dataGridView1.TabIndex = 13;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(29, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Nombre";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Precio";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(29, 148);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Existencia";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID";
             // 
             // POSTRE
             // 

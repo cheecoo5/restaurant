@@ -36,6 +36,19 @@ namespace WinForms
             dataGridView1.DataSource = P.ds.Tables["POSTRE"];
         }
 
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnregresar_Click(object sender, EventArgs e)
+        {
+            menu a = new menu();
+            a.Show();
+
+            this.Close();
+        }
+
 
     }
 }
